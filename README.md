@@ -85,6 +85,7 @@ Data Layer: Fetch functions in /services
 Types Layer: Shared interfaces in /types
 
 # Loom Video Demo 
+https://www.loom.com/share/1739644ad30e46169d3211901ce19663?sid=5634b828-86d9-4f7c-b11c-f78f2443eef9
 
 # Deployment
 
