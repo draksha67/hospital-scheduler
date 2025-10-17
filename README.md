@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+*//Hospital Scheduler
 
-## Getting Started
+A Hospital Appointment Scheduler built using Next.js, TypeScript, and Tailwind CSS.
+It allows hospital staff to view and manage doctor appointments in Day View and Week View, with role-based filtering and a clean, modular architecture.
 
-First, run the development server:
+🚀 Features
+🧩 Architecture & Design (30%)
 
-```bash
+Separation of Concerns: Organized into components, hooks, services, and types
+
+Headless Logic: Custom React hooks handle data and logic separately from UI
+
+Service Layer: Fetches data from mock APIs
+
+Reusable Components: Calendar, Doctor Selector, Appointment Card
+
+📅 Day View Calendar (25%)
+
+Displays appointments for the selected doctor and selected date
+
+Time range: 8:00 AM – 6:00 PM in 30-minute slots
+
+Color-coded by appointment type
+
+Handles overlapping appointments gracefully
+
+🗓️ Week View Calendar (25%)
+
+Shows appointments across 7 days (Monday–Sunday)
+
+Same 8:00 AM – 6:00 PM range
+
+Responsive grid layout for mobile and desktop
+
+👨‍⚕️ Role-Based Filtering (20%)
+
+Dropdown to select a doctor (for front desk staff view)
+
+Displays doctor’s name, specialty, and working hours
+
+Filters appointments accordingly
+
+🛠️ Tech Stack
+Category	Technology
+Frontend Framework	Next.js 14
+
+Language	TypeScript
+
+Styling	Tailwind CSS
+
+State Management	React Hooks
+Data Layer	Mock data (JSON / Local)
+Deployment	Vercel (Recommended)
+📂 Folder Structure
+src/
+ ┣ components/
+ ┃ ┣ DayView.tsx
+ ┃ ┣ WeekView.tsx
+ ┃ ┣ DoctorSelect.tsx
+ ┃ ┗ AppointmentCard.tsx
+ ┣ hooks/
+ ┃ ┣ useAppointments.ts
+ ┃ ┗ useDoctorFilter.ts
+ ┣ services/
+ ┃ ┗ appointmentService.ts
+ ┣ types/
+ ┃ ┗ index.ts
+ ┣ pages/ or app/
+ ┃ ┗ page.tsx
+ ┗ mockData.ts
+
+⚙️ Setup Instructions
+1️⃣ Clone the repository
+git clone https://github.com/your-username/hospital-scheduler.git
+cd hospital-scheduler
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Then open your browser at http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧠 Accessibility
 
-## Learn More
+Each interactive element (select, button) has accessible labels
+Keyboard-navigable interface
+Uses aria-label and role attributes
 
-To learn more about Next.js, take a look at the following resources:
+#Clean Architecture Principles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+UI Layer: Components under /components
+Logic Layer: Custom hooks under /hooks
+Data Layer: Fetch functions in /services
+Types Layer: Shared interfaces in /types
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ Loom Video Demo (add your link)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+✨ Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Raksha Dixit
+Frontend Developer (Internship assessment)
+[draksha480@gmail.com]
+
+
+
+License
+
+This project is for educational purposes only.
