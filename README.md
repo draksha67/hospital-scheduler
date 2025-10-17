@@ -84,7 +84,11 @@ Logic Layer: Custom hooks under /hooks
 Data Layer: Fetch functions in /services
 Types Layer: Shared interfaces in /types
 
- Loom Video Demo (add your link)
+# Loom Video Demo 
+
+# Deployment
+
+https://vercel.com/draksha67s-projects/hospital-scheduler/3ork7Lg8hkjhgLsn7GneQMwZ6AGp
 
 
 ✨ Author
